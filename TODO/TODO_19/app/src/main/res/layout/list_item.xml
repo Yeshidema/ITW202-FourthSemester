@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sportsImage"
+            android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Title"
+        android:layout_alignBottom="@+id/sportsImage"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        style="@style/SportsTitle"/>
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="News"
+        android:textColor="?android:textColorSecondary"
+        android:layout_below="@+id/sportsImage"
+        style="@style/TextAppearance.AppCompat.Subhead"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@+id/newsTitle"
+        android:text="Here is some news"
+        style="@style/TextAppearance.AppCompat.Subhead"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
