@@ -77,12 +77,12 @@ public class ActivityInputOutputTest {
     public  void textInputOutput(){
 
         onView(withId(R.id.editText))
-                .perform(typeText(MESSAGE), closeSoftKeyboard());
+                .perform(typeText(MESSAGE));
         onView(withId(R.id.button1)).perform(click());
         onView(withId(R.id.display_msg)).check(matches(withText(MESSAGE)));
 
         onView(withId(R.id.Reply_txt))
-                .perform(typeText(REPLY_MESSAGE), closeSoftKeyboard());
+                .perform(typeText(REPLY_MESSAGE));
         onView(withId(R.id.button4)).perform(click());
         onView(withId(R.id.Display_msg)).check(matches(withText(REPLY_MESSAGE)));
     }
