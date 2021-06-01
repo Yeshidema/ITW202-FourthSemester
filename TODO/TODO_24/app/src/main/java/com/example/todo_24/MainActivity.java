@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Name of shared preferences file
     private String sharedPrefFile =
-            "com.example.todo_24.sharedprefs";
+            "com.example.todo_24.sharedPrefs";
 
 
     @Override
@@ -41,9 +41,8 @@ public class MainActivity extends AppCompatActivity {
         mColor = ContextCompat.getColor(this,
                 R.color.default_background);
 
-        mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
-
-        // Restore preferences
+        // Restore preferences using getsharedpreferences
+        mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE); //takes two parameters
         mCount = mPreferences.getInt(COUNT_KEY, 0);
         mShowCountTextView.setText(String.format("%s", mCount));
         mColor = mPreferences.getInt(COLOR_KEY, mColor);
@@ -80,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
-        SharedPreferences.Editor preferencesEditor = mPreferences.edit();
+        SharedPreferences.Editor preferencesEditor = mPreferences.edit(); //editor use bay go
         preferencesEditor.putInt(COUNT_KEY, mCount);
         preferencesEditor.putInt(COLOR_KEY, mColor);
         preferencesEditor.apply();

@@ -36,10 +36,7 @@ public class Order extends AppCompatActivity implements AdapterView.OnItemSelect
       if(spinner != null){
           spinner.setOnItemSelectedListener(this);
       }
-
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_label,
-                android.R.layout.simple_spinner_dropdown_item);
+      ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.array_label,            android.R.layout.simple_spinner_dropdown_item);
       adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
       if(spinner != null){

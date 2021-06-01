@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         tab_layout.addTab(tab_layout.newTab().setText(R.string.tab_label2));
         tab_layout.addTab(tab_layout.newTab().setText(R.string.tab_label3));
 
+
         tab_layout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         ViewPager viewPager = findViewById(R.id.pager);

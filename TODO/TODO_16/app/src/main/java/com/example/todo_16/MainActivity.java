@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         for(int i = 0; i<20; i++){
-            mList.addLast("Word" + i);
+            mList.addLast("Word " + i);
         }
 
         RecyclerView recyclerView = findViewById(R.id.recycleView);
