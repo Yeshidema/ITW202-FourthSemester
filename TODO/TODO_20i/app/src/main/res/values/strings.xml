@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TODO_4</string>
+    <string name="hint">Enter Your Name</string>
+    <string name="hint2">Type Something</string>
+</resources>
